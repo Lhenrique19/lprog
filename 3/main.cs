@@ -38,16 +38,17 @@ class Aula3 {
     print(aluno5);
 
     Disciplina disciplina1 = new Disciplina {
-      nome = "Cleber",
-      semestre = 0
+      nome = "Cleber"
     };
   
   Disciplina disciplina2 = new Disciplina {
-      nome = "Cleberinho",
-      semestre = 11
-    };
+      nome = "Cleberinho"
 
+    };
+  Disciplina disciplina3 = new Disciplina(11);
   print(disciplina1);
   print(disciplina2);
+  print(disciplina3);
+    
   }
 }
