@@ -1,19 +1,13 @@
-using System;
 using Modelos;
 
-class Aula3 {
+class Aula4 {
+
   public static void Main (string[] args) {
 
-    Aluno aluno1 = new Aluno {
-      Matricula = "2020ENEL123",
-      Nome = "Maria",
-     
-    };
-
-    
-    
+    Aluno aluno1 = new Aluno(0);
+    aluno1.Periodo = 0;
     Impressora.print(aluno1);
-    
+
     Aluno aluno2 = new Aluno();
     Impressora.print(aluno2);
     
@@ -38,6 +32,5 @@ class Aula3 {
     
   Disciplina disciplina3 = new Disciplina(11);
   Impressora.print(disciplina3);
-    
   }
 }

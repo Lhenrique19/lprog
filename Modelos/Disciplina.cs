@@ -2,7 +2,7 @@ namespace Modelos {
 
   class Disciplina {
     
-    public string nome;
+    public string Nome;
     public int semestre;
 
     public Disciplina() : this(1){
@@ -17,7 +17,7 @@ namespace Modelos {
       } else {
         this.semestre = semestre;
       }
-      } 
+    } 
     
     }
     
