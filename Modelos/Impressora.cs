@@ -16,7 +16,7 @@ namespace Modelos {
   public static void print(Disciplina disciplina){
     Console.WriteLine(
       "-----------------------\n" +
-      "Nome: " + disciplina.Nome + "\n" + "Semestre: " + disciplina.semestre + "\n" +
+      "Nome: " + disciplina.Nome + "\n" + "Semestre: " + disciplina.Semestre + "\n" +
       "-----------------------"
     );
   }

@@ -13,17 +13,16 @@ class AulaObjeto {
   public static void Main (string[] args) {
     
      Aluno aluno1 = new Aluno {
-      Matricula = "012022",
+      Matricula = "012022"
       
     };
     Aluno aluno2 = new Aluno {
-      Matricula = "022022",
+      Matricula = "022022"
       
     };
 
     Disciplina disciplina = new Disciplina {
-      Nome = "Linguagem de Programação",
-      semestre = 3
+      Nome = "Linguagem de Programação"
     };
     
     Imprimir(aluno1, disciplina);
