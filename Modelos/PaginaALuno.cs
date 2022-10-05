@@ -19,10 +19,24 @@ namespace Modelos {
 
     class PaginaAluno : Pagina<Aluno> {
 
+
+      public TextoAluno TextoAluno {
+      get; set;
+    }
+      
       public Texto Formatar(Aluno aluno){
-        return new TextoAluno(aluno); 
+        return this.TextoAluno = new TextoAluno(aluno); 
       }
-    
+
+      public string Rodape(){
+        string rodape = "";
+      if(String.isNullOrEmpty(this.TextoAluno.Aluno.Matricula)){
+        rodape += "Matricula invalida\n";
+        
+      }
+          
+        return rodape + Impressora.LinhaComum();
+      }
   }
 
 }
