@@ -2,53 +2,50 @@ using System;
 
 namespace Modelos {
 
+//  Para evitar a repetição de nome, CPF, etc. foi criado o Imprimir(Object obj).
+  
   class Impressora {
 
-     public static void print(Pessoa pessoa) {
+    public static void print(Texto texto) {
+    Console.WriteLine("=======================================================");
+      
+    Console.WriteLine(texto.Informar());   
+      
+    Console.WriteLine("=======================================================");
+    }
+    
+    public static void print(Pessoa pessoa) {
     Console.WriteLine(
-     "-------------------------------------------------------\n" +
-     "Nome: " + pessoa.Nome + "\n" + "CPF:" + pessoa.Cpf + "\n" +
-      "-------------------------------------------------------"
+     "Nome: " + pessoa.Nome + "\n" + "CPF:" + pessoa.Cpf
     );
-
   } 
+    
     public static void print(Professor professor) {
     Console.WriteLine(
-     "-------------------------------------------------------\n" +
-     "Nome: " + professor.Nome + "\n" + "CPF:" + professor.Cpf + "\n" + "Código: " + professor.Codigo + "\n" +
-      "-------------------------------------------------------"
+    "Código: " + professor.Codigo
     );
-
   } 
-
-
-    public static void print(Aluno aluno){
+    
+    public static void print(Aluno aluno) {
     Console.WriteLine(
-      "-------------------------------------------------------\n" +
-      "Matricula: " + aluno.Matricula + "\n" + "Nome: " + aluno.Nome + "\n" + "CPF:" + aluno.Cpf +"\n" + "Periodo: " + aluno.Periodo + "\n" +
-      "-------------------------------------------------------\n"
+     
+    );
+  }
+    
+    public static void print(Disciplina disciplina) {
+    Console.WriteLine(
+    "Nome: " +
+      disciplina.Nome + "\n" + "Semestre: " 
+      + disciplina.Semestre
     );
   }
 
-  public static void print(Disciplina disciplina){
+    public static void print(Contato contato) {
     Console.WriteLine(
-      "-------------------------------------------------------\n" +
-      "Nome: " + disciplina.Nome + "\n" + "Semestre: " + disciplina.Semestre + "\n" +
-      "-------------------------------------------------------\n"
+    contato.Informar()
     );
-  }
-  
-
-  public static void print(Familiar familiar) {
-    Console.WriteLine(
-     "-------------------------------------------------------\n" +
-     "Nome: " + familiar.Nome + "\n" + "CPF:" + familiar.Cpf + "\n" + "Parentesco: " + familiar.Parentesco + "\n" +
-      "-------------------------------------------------------"
-    );
-
   } 
+    
+ }
+
 }
-}
-
-
-
