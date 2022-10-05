@@ -30,7 +30,7 @@ namespace Modelos {
 
       public string Rodape(){
         string rodape = "";
-      if(String.isNullOrEmpty(this.TextoAluno.Aluno.Matricula)){
+      if(string.IsNullOrEmpty(this.TextoAluno.Aluno.Matricula)){
         rodape += "Matricula invalida\n";
         
       }
