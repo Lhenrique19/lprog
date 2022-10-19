@@ -16,8 +16,6 @@ namespace Modelos {
       foreach(Nota nota in this.Historico.Notas){
         soma += nota.Valor;
       }
-      
-      
       return soma/this.Historico.Notas.Count;
     }
 
