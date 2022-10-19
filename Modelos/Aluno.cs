@@ -1,11 +1,13 @@
-//Uma class pode ter métodos
-
 namespace Modelos {
   class Aluno : Pessoa {
     //Nunca declarar um atributo público
     private string matricula;
+    // private string nome;
     private int periodo;
-    
+    //Private: Outras classes não podem usar esse atributo
+    //Protected: Pode ser modificado por classes derivadas
+    //Internal: pode ser usado pelas pastas que estão dentro das classes do pacote namespace Modelos
+
     public string Matricula {
       get => this.matricula;
       set => matricula = value;
@@ -22,12 +24,16 @@ namespace Modelos {
       }
       }
     }
+    //Retorna o valor do periodo 
 
     public Aluno() : this(0) {
     }
 
-    public bool Matricular(Disciplina disciplina) {
-      return this.Periodo == disciplina.Semestre;
+    public Matricula Cursar(Curso curso) {
+      Matricula matricula = new Matricula();
+      matricula.Aluno = this;
+      matricula.Curso = curso;
+      return matricula;
     }
     
     public Aluno(int periodo) {
@@ -47,9 +53,8 @@ namespace Modelos {
         }
 
     public override bool Validar() {
-
-      return this.Matricula != null &&
-        this.Matricula.Length > 0;
+      return this.Matricula != null && this.Matricula.Length > 0;
     }
+      
   }
 }

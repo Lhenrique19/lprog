@@ -1,6 +1,6 @@
 using Modelos;
 
-class Aula4 {
+/*class Aula4 {
 
   public static void Main (string[] args) {
 
@@ -33,4 +33,4 @@ class Aula4 {
   Disciplina disciplina3 = new Disciplina(11);
   Impressora.print(disciplina3);
   }
-}
+}*/

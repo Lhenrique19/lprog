@@ -1,7 +1,7 @@
 using System;
 using Modelos;
 
-class Aula3 {
+/*class Aula3 {
   public static void Main (string[] args) {
 
     Aluno aluno1 = new Aluno {
@@ -14,7 +14,7 @@ class Aula3 {
     
     Impressora.print(aluno1);
     
-    Aluno aluno2 = new Aluno();
+   Aluno aluno2 = new Aluno();
     Impressora.print(aluno2);
     
     Aluno aluno3 = new Aluno(2);
@@ -41,3 +41,4 @@ class Aula3 {
     
   }
 }
+*/
