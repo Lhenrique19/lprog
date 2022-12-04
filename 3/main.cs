@@ -1,7 +1,7 @@
 using System;
 using Modelos;
 
-/*class Aula3 {
+class Aula3 {
   public static void Main (string[] args) {
 
     Aluno aluno1 = new Aluno {
@@ -41,4 +41,3 @@ using Modelos;
     
   }
 }
-*/

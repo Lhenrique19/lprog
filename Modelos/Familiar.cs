@@ -11,6 +11,9 @@ public string Parentesco {
       return this.Parentesco != null &&
         this.Parentesco.Length > 0;
     }
+  public string Informar() {
+    return "Parentesco: " + this.Parentesco;
+  }
   
 }
   

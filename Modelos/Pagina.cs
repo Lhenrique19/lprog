@@ -1,5 +1,5 @@
 namespace Modelos {
-//aula "genéricos"
+//aula de genéricos
   interface Pagina<T> {
     
     Texto Formatar(T t);
